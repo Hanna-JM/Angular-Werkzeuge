@@ -1,0 +1,12 @@
+<div class ="ui middle aligned selected divided list">
+  <div *ngFor="let tool of tools">
+    {{tool.name}}
+  </div>
+   <swe-tool-list-item class="item"
+     *ngFor="let tool of tools"
+     [tool]="tool"
+     [routerLink]="tool.itemNumber"></swe-tool-list-item>
+     <!--(click)="showDetails(tool)"></swe-tool-list-item> -->
+  <!-- swe-tool-list-item              selector -->
+ </div>
+

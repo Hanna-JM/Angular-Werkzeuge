@@ -1,0 +1,14 @@
+<ng-container *ngIf="tool">
+  <img class="ui tiny image"
+       *ngIf="tool.thumbnails && tool.thumbnails[0] && tool.thumbnails[0].url" [src]="tool.thumbnails[0].url" title="{{tool.thumbnails[0].title}}">
+
+  <div class="content">
+    <div class="header">
+      <span class="name">{{tool.name}}</span>
+      <span class="number">{{tool.itemNumber}}</span>
+      <span class="category">{{tool.category}}</span>
+    </div>
+    <div class="description">{{tool.description}}</div>
+   <!-- <swe-tool-details >(click)="showToolList(tool)"</swe-tool-details>-->
+  </div>
+</ng-container>
